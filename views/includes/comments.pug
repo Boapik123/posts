@@ -1,0 +1,23 @@
+.comments
+  .comment
+    .row
+      time.col-xs-12.col-sm-3.col-md-2(datetime="2014-02-14") 14-02-2014
+      p.col-xs-9.col-sm-7.col-md-9 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .rating.col-xs-3.col-sm-2.col-md-1
+        span.number 5
+        include svg/rating.pug
+form.add-block.clearfix
+  input.add-rating(type="text" hidden)
+  textarea.add-text.form-control(rows="3" placeholder="Текст комментария")
+  .rating-block
+    span.rating
+      include svg/rating.pug
+    span.rating
+      include svg/rating.pug
+    span.rating
+      include svg/rating.pug
+    span.rating
+      include svg/rating.pug
+    span.rating
+      include svg/rating.pug
+  button.add-button.btn.btn-success.col-xs-12.col-sm-4.col-sm-offset-4(type="submit") Добавить

@@ -1,0 +1,11 @@
+/*==== Variables ====*/
+$font-size-base: 16px;
+$font-weight: normal;
+$line-height: 1.3em;
+$font-family-text: 'PT Sans', sans-serif;
+$font-family-title: 'PT Sans', sans-serif;
+
+$font: #{$font-weight} #{$font-size-base}/#{$line-height} #{$font-family-text};
+
+$base-color: black;
+$decoration-color: #640;

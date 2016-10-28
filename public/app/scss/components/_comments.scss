@@ -1,0 +1,84 @@
+/*==== Comments block ====*/
+.comments {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+
+	border-radius: 1rem;
+	box-shadow: inset 0 0 10px $decoration-color;
+}
+
+.comment {
+	margin-bottom: 1rem;
+	padding: 1rem;
+
+	border-bottom: 1px solid $decoration-color;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+
+	&:nth-child(even) {
+		background-color: #eee;
+	}
+
+	&:nth-child(odd) {
+		background-color: #ddd;
+	}
+
+	.rating {
+		text-align: center;
+	}
+
+	.number {
+		background: url("../images/favorite.svg") no-repeat;
+		margin-bottom: 4px;
+	}
+
+	.time {
+		text-align: center;
+	}
+
+	.star-icon {
+		background: url("../images/favorite.svg") no-repeat;
+	}
+}
+
+.add-block {
+	padding: 2.5rem;
+
+	border-radius: 1em;
+	box-shadow: inset 0 0 10px $decoration-color;
+
+	.rating-block {
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		text-align: center;
+
+		font-size: 0;
+	}
+
+	.rating {
+		display: inline-block;
+
+		width: 20px;
+		height: 20px;
+		padding-right: 2px;
+		padding-left: 20px;
+
+		cursor: pointer;
+		vertical-align: top;
+
+		background: url("../images/favorite-disable.svg") no-repeat;
+
+		&.active {
+			cursor: pointer;
+
+			background: url("../images/favorite.svg") no-repeat;
+		}
+	}
+
+	.add-text {
+		width: 100%;
+		padding: 10px;
+	}
+}

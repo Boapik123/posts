@@ -1,0 +1,18 @@
+.post
+  img(src="#{collection}" alt="placehold.it" srcset="http://placehold.it/1400x600 2x")
+  .assets-block.row
+    time.time.col-xs-12.col-sm-12(datetime="2008-02-14") 14-02-2008
+  h2.title Title
+  p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  .assets-block.clearfix
+    .col-xs-12.col-sm-6
+      span.count-comments
+        span.number 10
+        include svg/comment.pug
+      span.rating
+        span.number 5
+        include svg/rating.pug
+    .comment-show.col-xs-12.col-sm-6
+        a(href="#" title="Показать комментарии") Комментарии
+  hr
+  include comments.pug

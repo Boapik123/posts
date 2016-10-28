@@ -1,0 +1,38 @@
+.posts-list {
+	margin: 0;
+	margin-top: 50px;
+	padding: 0;
+
+	list-style: none;
+	.posts-item {
+		margin-bottom: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		border: 3px solid $decoration-color;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	.rating {
+		text-align: center;
+		.number {
+			position: relative;
+
+			display: inline-block;
+
+			width: $line-height;
+			height: $line-height;
+			margin-right: 15px;
+			padding-left: 27px;
+
+			vertical-align: top;
+
+			color: $decoration-color;
+
+			line-height: $line-height;
+		}
+	}
+	.star-icon {
+		background: url("../images/favorite.svg") no-repeat;
+	}
+}

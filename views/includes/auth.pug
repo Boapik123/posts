@@ -1,0 +1,11 @@
+#auth-block.clearfix
+	form#auth-form(enctype="application/x-www-form-urlencoded" action='/auth' method="post")
+		.form-group
+			label(for="login") Логин
+			input.form-control(type="text" id="login" placeholder="Логин" name="login")
+		.form-group
+			label(for="password") Пароль
+			input.form-control(type="password" id="password" placeholder="Пароль" name="password")
+		button.btn.btn-primary.col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-3(type="submit") Войти
+		.col-xs-12.col-sm-12.text-center
+			p.text-danger= message

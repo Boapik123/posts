@@ -1,0 +1,19 @@
+#close {
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+
+	display: block;
+
+	width: 1.2rem;
+	height: 1.2rem;
+	padding: 0;
+
+	opacity: .5;
+	border: 0;
+	border-radius: 5px;
+	background: url(../images/cross.svg) no-repeat center center;
+	background-size: cover;
+
+	font-size: 0;
+}

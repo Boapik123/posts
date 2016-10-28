@@ -1,0 +1,10 @@
+extends layouts/layout
+block content
+	.container
+		.row
+			.col-xs-6.col-xs-offset-6.col-sm-3.col-sm-offset-9
+				a.btn.btn-success#add-post-button(href="#") Добавить
+		#content.row
+		#modal(style="display: none")
+			include includes/add-post.pug
+			#bg

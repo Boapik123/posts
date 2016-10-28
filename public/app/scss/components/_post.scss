@@ -1,0 +1,83 @@
+/*==== Posts block ====*/
+.post {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+
+	color: $base-color;
+	background: #fff;
+
+	font: $font;
+
+	img {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.title,
+	.description {
+		text-indent: 1rem;
+	}
+
+	.title {
+		font-family: $font-family-title;
+	}
+
+	.time {
+		display: block;
+
+		text-align: center;
+
+		color: $decoration-color;
+
+		font-style: italic;
+	}
+
+	.assets-block,
+	.comment-show,
+	.rating {
+		text-align: center;
+	}
+
+	.count-comments,
+	.rating {
+		padding: 0 1rem;
+
+		line-height: 1rem;
+	}
+
+	.number {
+		position: relative;
+
+		display: inline-block;
+
+		width: $line-height;
+		height: $line-height;
+		margin-right: 15px;
+		padding-left: 27px;
+
+		vertical-align: top;
+
+		color: $decoration-color;
+
+		line-height: $line-height;
+	}
+
+	.comment-icon {
+		background: url("../images/chat.svg") no-repeat;
+	}
+
+	.star-icon {
+		background: url("../images/favorite.svg") no-repeat;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.assets-block {
+		text-align: left;
+
+		.comment-show {
+			text-align: right;
+		}
+	}
+}

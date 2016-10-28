@@ -1,0 +1,14 @@
+#auth-block {
+    margin-top: 50px;
+    padding: 1em;
+
+    color: $base-color;
+    border: 3px solid $decoration-color;
+    border-radius: 5px;
+    background-color: #fff;
+
+    font: $font;
+    label {
+        font-family: $font-family-title;
+    }
+}

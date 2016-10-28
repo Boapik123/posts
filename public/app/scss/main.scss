@@ -1,0 +1,19 @@
+/* Import Bootstrap */
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "components/variables";
+
+/*==== Main styles ====*/
+body {
+  background: silver url(../images/dark_wood.png);
+  padding: 0;
+  margin: 0;
+}
+
+@import 'components/post';
+@import 'components/comments';
+@import 'components/auth';
+@import 'components/post-list';
+@import 'components/admin-comments';
+@import 'components/add-post';
+@import 'components/addPostButton';
+@import 'components/closeButton';

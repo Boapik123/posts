@@ -1,0 +1,12 @@
+form#add-post-form(enctype="multipart/form-data" method="post" action="/post")
+	.form-group
+		label(for="title") Загаловок
+		input.form-control(type="text" name="title" id="title" placeholder="Заголовок" required)
+	.form-group
+		label(for="body") Содержание
+		textarea.form-control(id="body" name="body" placeholder="Содержание" rows="6" required)
+	.form-group
+		label(for="image") Добавить изображение
+		input(type="file" id="image" name="image" required)
+	button.btn.btn-primary(type="submit") Добавить новость
+	button#close(type="button") Выйти
